@@ -19,6 +19,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "orders",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "profits",
 				"outputs": [
@@ -34,9 +53,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
-						"name": "price",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "orderNumber",
+						"type": "uint256"
 					}
 				],
 				"name": "refund",
@@ -105,10 +124,10 @@
 	},
 	"sources": {
 		"purchase.sol": {
-			"keccak256": "0x16f5847eb4ead5b28d1b57efb21c90fa95bef0899a462b18f97a4845a4f81f27",
+			"keccak256": "0x6f664abf37b9d9319aec2d44bf75e3f6fb05d8bbbe258847636010b068e07b7b",
 			"urls": [
-				"bzz-raw://6dbac4b205ca92c94144b8ef5d6c2470e46127cc0a27cbb94aa5b7463ee75f1b",
-				"dweb:/ipfs/QmURygfEYnfHUGPYr3ncP3dbFYP6dc3PmYwyH7AQdzeefW"
+				"bzz-raw://2a891b5d497873f914de949d6ed8569341a32cf526ca37ba381b203f72ff6a8a",
+				"dweb:/ipfs/QmbYqYVTJKpa272anniiFGnAyeZPvjCbUmUN1CypHepm9H"
 			]
 		}
 	},
