@@ -12,7 +12,10 @@ contract purchase{
         profits += price;
     }
     function refund(uint orderNumber) public{
-        profits -= orders[orderNumber];
+        if(orderNumber % 2 == 0){
+            profits -= orders[orderNumber];
+        }
+        
     }
     function seeProfits(bool realProfits) public view returns (int) {
         if(realProfits){
@@ -20,6 +23,12 @@ contract purchase{
         }
         return profits * 100;
     }
+    function divideProfitsByTen() public{
+        profits /= 10;
+    }
+
+
+
 
 
 }
