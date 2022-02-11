@@ -14,4 +14,12 @@ contract AnimalFactory{
         animals.push(Animal('Tiger', 'Orange', 'jeff', 2));
         counter+=1;
     }
+    function populate(int i) public{
+        for (int j = 0; j < i; j++){
+            createAnimal();
+        }
+    }
+    function viewFactory() public view returns(Animal[] memory){
+        return animals;
+    }
 }
